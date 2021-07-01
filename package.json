@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-smanda",
+  "version": "1.0.0",
+  "description": "Design of SMA Negeri 2 Kebumen by Boostrap 4 and Font Awesome 5",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rizalarfiyan <rizal.arfiyan.23@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.27.4",
+    "cssnano": "^5.0.6",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.2.13"
+  },
+  "browserslist": [
+    "last 2 major versions"
+  ]
+}
