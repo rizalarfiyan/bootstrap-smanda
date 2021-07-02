@@ -8,6 +8,7 @@ const htmlmin = require("gulp-htmlmin");
 const del = require("del");
 const cssnano = require("cssnano");
 const htmlreplace = require("gulp-html-replace");
+const template = require("gulp-template-html");
 const autoprefixer = require("autoprefixer");
 const terser = require("gulp-terser");
 const cleanCSS = require("gulp-clean-css");
@@ -15,13 +16,19 @@ const cleanCSS = require("gulp-clean-css");
 // Task HTML
 function htmlTask() {
   return src(`${config.paths.src.base}/**/*.html`)
+    .pipe(template("template.html"))
     .pipe(
       htmlreplace({
         js: `js/${config.files.js}`,
         css: `css/${config.files.css}`,
       })
     )
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true,
+        removeComments: true,
+      })
+    )
     .pipe(dest(config.paths.dist.base));
 }
 
