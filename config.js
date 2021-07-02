@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   server: {
     root: "./",
@@ -23,5 +25,10 @@ module.exports = {
     template: "template.html",
     js: "js/script.js",
     css: "css/style.css",
+  },
+  alias: {
+    paths: {
+      "~bootstrap": path.resolve(__dirname, './node_modules/bootstrap'),
+    },
   },
 };

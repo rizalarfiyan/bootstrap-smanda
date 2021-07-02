@@ -13,6 +13,7 @@ const template = require("gulp-template-html");
 const autoprefixer = require("autoprefixer");
 const terser = require("gulp-terser");
 const cleanCSS = require("gulp-clean-css");
+const alias = require('gulp-path-alias');
 
 // Task HTML
 task("html", function() {
@@ -36,6 +37,7 @@ task("html", function() {
 // Task SCSS
 task("sass", function() {
   return src(`${config.paths.src.css}/**/*.scss`)
+    .pipe(alias(config.alias))
     .pipe(sass().on("error", sass.logError))
     .pipe(cleanCSS())
     .pipe(postcss([cssnano(), autoprefixer()]))
