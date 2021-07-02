@@ -20,7 +20,8 @@ module.exports = {
     },
   },
   files: {
-    js: "script.js",
-    css: "style.css",
+    template: "template.html",
+    js: "js/script.js",
+    css: "css/style.css",
   },
 };
