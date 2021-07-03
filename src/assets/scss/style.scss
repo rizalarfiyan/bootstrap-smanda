@@ -42,3 +42,10 @@
 @import '~bootstrap/scss/spinners';
 @import '~bootstrap/scss/utilities';
 @import '~bootstrap/scss/print';
+
+// Components
+@import 'global';
+@import 'icons';
+
+// Pages
+@import 'pages/login';

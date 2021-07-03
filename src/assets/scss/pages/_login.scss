@@ -1,0 +1,50 @@
+$semi-dark :#59667a;
+$light-text: #999999;
+
+
+$background-auth: '../images/background/bg-auth.jpg';
+$shadow-auth: 0 0 37px rgba(8, 21, 66, 0.05);
+$input-auth: #f3f3ff;
+
+.auth-card {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: url($background-auth);
+  background-position: center;
+  padding: 1.5rem .75rem;
+
+  .auth-header {
+    text-align: center;
+    border-bottom: 1px solid $text-muted;
+    margin-bottom: 1rem;
+  }
+
+  .auth-content {
+    max-width: 450px;
+    width: 100%;
+    padding: 1.75rem;
+    border-radius: 10px;
+    box-shadow: $shadow-auth;
+    margin: 0 auto;
+    background-color: $white;
+  }
+
+  .forgot {
+    text-align: center;
+    display: block;
+    margin-top: .5rem;
+  }
+
+  .social-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > * {
+      margin: .25rem;
+    }
+  }
+}

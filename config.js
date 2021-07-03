@@ -18,7 +18,7 @@ module.exports = {
       css: "./dist/css",
       js: "./dist/js",
       images: "./dist/images",
-      fonts: "./dist/fonts",
+      fonts: "./dist/webfonts",
     },
   },
   files: {

@@ -1,0 +1,52 @@
+$icon-base: 1.5rem;
+$icon-sm: 1rem;
+$icon-md: 2rem;
+$icon-lg: 3rem;
+$icon-spacing: 0.25em;
+
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: $icon-base;
+  width: $icon-base;
+
+  &.sm {
+    height: $icon-sm;
+    width: $icon-sm;
+  }
+  &.md {
+    height: $icon-md;
+    width: $icon-md;
+  }
+  &.lg {
+    height: $icon-lg;
+    width: $icon-lg;
+  }
+}
+
+.icon-text {
+  align-items: flex-start;
+  color: inherit;
+  display: inline-flex;
+  flex-wrap: wrap;
+  line-height: $icon-base;
+  vertical-align: top;
+
+  .icon {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    &:not(:last-child) {
+      margin-right: $icon-spacing;
+    }
+
+    &:not(:first-child) {
+      margin-left: $icon-spacing;
+    }
+  }
+}
+
+div.icon-text {
+  display: flex;
+}
