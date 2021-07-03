@@ -16,6 +16,10 @@ $input-auth: #f3f3ff;
   background-position: center;
   padding: 1.5rem .75rem;
 
+  .logo {
+    margin-bottom: 1rem;
+  }
+
   .auth-header {
     text-align: center;
     border-bottom: 1px solid $text-muted;

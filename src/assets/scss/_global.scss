@@ -2,8 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
-  
+  border-radius: $border-radius;
+  padding: .5rem;
+  max-width: 220px;
+  margin: auto;
+
   img {
     width: 2.5rem;
     height: auto;
@@ -14,5 +17,22 @@
     margin: 0 0 0 .75rem;
     max-width: 9rem;
     font-weight: $font-weight-bold;
+    color: $dark;
+  }
+}
+
+a {
+  transition: all .3s ease-in-out;
+
+  &.noline {
+    &, &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &.ripple-bg {
+    &:hover {
+      background-color: rgba($gray-500, .15);
+    }
   }
 }
