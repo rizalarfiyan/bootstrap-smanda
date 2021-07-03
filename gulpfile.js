@@ -21,7 +21,7 @@ task("html", function() {
     .pipe(template(config.files.template))
     .pipe(
       htmlreplace({
-        js: [config.files.js, "js/jquery.min.js", "js/popper.min.js", "js/bootstrap.min.js"],
+        js: ["js/jquery.min.js", "js/popper.min.js", "js/bootstrap.min.js", config.files.js],
         css: [config.files.css, "css/fontawesome.min.css"],
       })
     )

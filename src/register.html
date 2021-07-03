@@ -12,20 +12,38 @@
           </div>
           <div class="auth-content"> 
             <div class="auth-header">
-              <h1 class="h3">Login</h1>
-              <p>Enter your email or username & password to login!</p>
+              <h1 class="h3">Register</h1>
+              <p>Enter your personal details to create account!</p>
             </div>
             <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-2">
+                    <label>First Name</label>
+                    <input class="form-control" type="text" name="first_name" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-2">
+                    <label>Last Name</label>
+                    <input class="form-control" type="text" name="last_name" placeholder="Last Name">
+                  </div>
+                </div>
+              </div>
               <div class="form-group mb-2">
-                <label>Email or username</label>
-                <input class="form-control" type="username" name="username" placeholder="Email or username">
+                <label>Username</label>
+                <input class="form-control" type="text" name="username" placeholder="Username">
+              </div>
+              <div class="form-group mb-2">
+                <label>Email</label>
+                <input class="form-control" type="email" name="email" placeholder="Email">
               </div>
               <div class="form-group">
                 <label>Password</label>
                 <div class="form-input">
                   <div class="input-group">
                     <input class="form-control" type="password" name="password" placeholder="Password">
-                    <div class="input-group-append showhidepassword" id="showhidepassword">
+                    <div class="input-group-append" id="showhidepassword">
                       <div class="input-group-text">
                         <span class="icon">
                           <i class="fas fa-eye"></i>
@@ -35,11 +53,14 @@
                   </div>
                 </div>
               </div>
+              <div class="form-group">
+                <label>Repeat Password</label>
+                <div class="form-input">
+                  <input class="form-control" type="password" name="password_confirmation" placeholder="Repeat Password">
+                </div>
+              </div>
               <div>
                 <button class="btn btn-primary btn-block w-100" type="submit">Login</button>
-                <a href="/forgot-password.html" class="forgot">
-                  Forgot Password?
-                </a>
               </div>
             </form>
             <div class="d-flex align-items-center pt-3 pb-2">
@@ -69,7 +90,7 @@
                 <span>Google</span>
               </a>
             </div>
-            <p class="mt-3 mb-0 text-center">Don't have account? <a class="ms-2" href="register.html">Create Account!</a></p>
+            <p class="mt-3 mb-0 text-center">Have your account? <a class="ms-2" href="login.html">Login!</a></p>
           </div>
           <div class="text-center mt-3">
             <a href="/" class="badge">
