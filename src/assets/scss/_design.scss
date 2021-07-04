@@ -1,0 +1,70 @@
+// Background effect
+.bg-effect {
+  background: rgba(0, 0, 0, 0.04);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: skewX(33deg);
+  transform-origin: left bottom;
+
+  &:before {
+    left: 280px;
+  }
+
+  &:after {
+    left: 560px;
+  }
+
+  &:before,
+  &:after {
+    background: rgba(4, 4, 4, 0.04);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+  }
+}
+
+// Rounded
+.oval {
+  border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
+}
+
+// Section Title
+.section-title {
+  text-align: center;
+
+  h1 {
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    padding-bottom: .75rem;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      display: block;
+    }
+
+    &:before {
+      width: 120px;
+      height: 1px;
+      background: rgba($secondary, .5);
+      bottom: 1px;
+      left: calc(50% - 60px);
+    }
+
+    &:after {
+      width: 40px;
+      height: 3px;
+      background: $primary;
+      bottom: 0;
+      left: calc(50% - 20px);
+    }
+  }
+}

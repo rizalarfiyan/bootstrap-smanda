@@ -4,14 +4,23 @@
 // Bootstrap variables
 @import '~bootstrap/scss/variables';
 
-// Custom Variables
+// Custom Bootstrap Variables
 @import 'variables';
+
+// Custom Variables
+@import 'cusom-variables';
 
 // Bootstrap mixins
 @import '~bootstrap/scss/mixins';
 
+// Custom Mixins
+@import 'mixins';
+
+// Extends
+@import 'extends';
+
 // Bootstrap components
-@import '~bootstrap/scss/root';
+// @import '~bootstrap/scss/root';
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/type';
 @import '~bootstrap/scss/images';
@@ -49,7 +58,10 @@
 // Components
 @import 'global';
 @import 'icons';
+@import 'cards';
 @import 'footer';
+@import 'design';
+@import 'animation';
 
 // Pages
 @import 'pages/landing';

@@ -1,0 +1,117 @@
+// Blog Cards
+.blog-item {
+	background: $white;
+	border-radius: $border-radius;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid rgba($dark, 0.10);
+  @extend %transition;
+
+	&:hover {
+		.blog-img {
+			img {
+				transform: scale(1.15);
+			}
+		}
+	}
+
+	.blog-img {
+		overflow: hidden;
+		min-height: 260px;
+		background: $gray-300;
+
+		img {
+			transform: scale(1);
+      @extend %transition;
+		}
+	}
+	
+	.blog-info {
+		padding: 20px;
+
+		.category {
+			line-height: normal;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+
+			a {
+				color: $white;
+				text-decoration: none;
+				font-weight: $font-weight-bold;
+				text-transform: uppercase;
+				font-size: .75rem;
+				background: $primary;
+				padding: .5rem 1rem;
+				border-radius: $rounded-pill;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+		.blog-title {
+			line-height: normal;
+			margin: 0 0 10px;
+
+			
+			a {
+				color: $dark;
+				font-size: $blog-size-title;
+				font-weight: $font-weight-bold;
+				line-height: normal;
+				letter-spacing: 0.5px;
+				@include truncate(54px, 2);
+
+				&:hover {
+					text-decoration: none;
+					color: $primary;
+				}
+			}
+		}
+
+		.blog-desc {
+
+			@include truncate(84px, 3);
+
+			p {
+				font-size: $blog-size-desc;
+				margin: 0;
+			}
+
+		}
+
+		.blog-meta {
+			&.top-hr {
+				margin-top: 1rem;
+				padding-top: 1rem;
+				border-top: 1px solid rgba($primary, .1);
+			}
+
+			.post-date {
+				font-size: $blog-size-meta;
+				font-weight: 400;
+				color: $secondary;
+			}
+
+			.post-author {
+				.avatar {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					display: inline-block;
+					vertical-align: middle;
+					overflow: hidden;
+				}
+
+				span {
+					padding-left: 8px;
+					font-size: $blog-size-meta;
+					color: $secondary;
+					max-width: calc(100% - 54px);
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}
