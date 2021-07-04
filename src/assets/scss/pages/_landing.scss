@@ -45,3 +45,44 @@ section {
     background: #f2f3f8;
   }
 }
+
+.quotes {
+  position: relative;
+  font-size: $font-size-lg;
+  margin: 2rem auto 1rem;
+  text-align: center;
+  font-family: monospace;
+  
+  &:before,
+  &:after {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 5rem;
+    color: rgba($secondary, .1);
+  }
+  
+  &:before {
+    content: '\f10d';
+    left: 0;
+    top: -50px;
+  }
+  
+  &:after {
+    content: '\f10e';
+    right: 0;
+    bottom: -30px;
+  }
+
+  cite {
+    margin-top: 1rem;
+    font-size: $font-size-base;
+    display: block;
+    text-align: center;
+
+    &:before {
+      content: '-';
+      margin-right: 6px;
+    }
+  }
+}
