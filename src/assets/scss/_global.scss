@@ -1,9 +1,10 @@
+// Logo design
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: $border-radius;
-  padding: .5rem;
+  padding: 0.5rem;
   max-width: 220px;
   margin: auto;
 
@@ -14,25 +15,112 @@
 
   h1 {
     line-height: 1;
-    margin: 0 0 0 .75rem;
+    margin: 0 0 0 0.75rem;
     max-width: 9rem;
     font-weight: $font-weight-bold;
     color: $dark;
   }
 }
 
+// Anchor
 a {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &.noline {
-    &, &:hover {
+    &,
+    &:hover {
       text-decoration: none;
     }
   }
 
   &.ripple-bg {
     &:hover {
-      background-color: rgba($gray-500, .15);
+      background-color: rgba($gray-500, 0.15);
     }
   }
+
+  &.anim {
+    letter-spacing: 0.6px;
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 1.5px;
+      background: $primary;
+      transition: ease all 0.3s;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Heading Anim 
+.heading-line {
+  display: inline-flex;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 40%;
+    height: 2.5px;
+    content: "";
+    left: 0;
+    bottom: -4px;
+    background: $primary;
+    opacity: 0.8;
+  }
+}
+
+// Lists
+ul {
+  &.reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Background effect
+.bg-effect {
+  background: rgba(0, 0, 0, 0.04);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: skewX(33deg);
+  transform-origin: left bottom;
+
+  &:before {
+    left: 280px;
+  }
+
+  &:after {
+    left: 560px;
+  }
+
+  &:before,
+  &:after {
+    background: rgba(4, 4, 4, 0.04);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+  }
+}
+
+// Rounded
+.oval {
+  border-radius: 100% 50% 50% 100% / 75% 69% 69% 75%;
 }

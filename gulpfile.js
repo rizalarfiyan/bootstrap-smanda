@@ -119,6 +119,8 @@ function syncServer(callback) {
     server: {
       baseDir: config.paths.dist.base,
     },
+    ui: false,
+    online: false,
     port: config.server.port || 8080,
   });
   callback();

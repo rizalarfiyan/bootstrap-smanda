@@ -10,3 +10,6 @@ $('#showhidepassword').on('click', function() {
   $(that).find('.icon').html(icon)
   if (confirm) confirm.attr('type', bool ? 'text' : 'password')
 })
+
+let year = new Date().getFullYear()
+$('#year').html(year === 2019 ? year : `2019 - ${year}`)

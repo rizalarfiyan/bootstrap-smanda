@@ -1,0 +1,37 @@
+footer {
+  position: relative;
+  overflow: hidden;
+
+  .bg-effect {
+    opacity: .4;
+  }
+
+  .content-footer {
+    margin: 2.5rem auto auto;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 2rem auto 1rem;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+  }
+
+  .social-icons {
+    > * {
+      margin: 0 4px;
+      padding: 8px;
+    }
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba($dark, .2);
+    padding: 1rem 0 1.5rem;
+  }
+}
