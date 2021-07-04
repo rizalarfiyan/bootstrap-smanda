@@ -1,0 +1,47 @@
+.contact-info {
+  max-width: 450px;
+  margin: 0 auto;
+
+  .info {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .icon {
+        background: $primary;
+        color: $white;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba($secondary, .2);
+    }
+  }
+  
+  .desc > *{
+    display: block;
+    margin: 0;
+  }
+
+  .card {
+    .icon {
+      padding: 2rem;
+      font-size: 1.5rem;
+      background: rgba($primary, .1);
+      color: $primary;
+      margin-right: 1.5rem;
+      border-radius: 50%;
+      transition: all .3s ease;
+    }
+  }
+}
+
+section {
+  padding: 5rem 0;
+  
+  &:nth-child(odd) {
+    background: #f2f3f8;
+  }
+}
