@@ -1,5 +1,24 @@
 @import '../components/parallax-landing';
 
+.section-two {
+  padding: 1.5rem 0;
+
+  > .row {
+    &:not(:last-child()) {
+      padding-bottom: 3rem;
+    }
+
+    > * {
+      padding: 1.5rem 0;
+    }
+  }
+
+  .image-landing {
+    max-width: 320px;
+    margin: auto;
+  }
+}
+
 $access-landing-padding: 1rem;
 $access-landing-size: 1.5rem;
 
@@ -148,6 +167,11 @@ section {
   padding: 5rem 0;
   position: relative;
   z-index: 2;
+  background: white;
+
+  &:nth-of-type(2) {
+    border-top: 7px solid $primary;
+  }
   
   &:nth-child(odd) {
     background: #f2f3f8;
