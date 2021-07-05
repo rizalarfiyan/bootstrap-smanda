@@ -1,3 +1,5 @@
+@import '../components/parallax-landing';
+
 $access-landing-padding: 1rem;
 $access-landing-size: 1.5rem;
 
@@ -36,6 +38,26 @@ $access-landing-size: 1.5rem;
     width: $access-landing-size;
     height: $access-landing-size;
     color: $dark;
+  }
+}
+
+// Counter
+.counter {
+  padding: 20px;
+  text-align: center;
+
+  .count {
+    color: $black;
+    font-weight: $font-weight-bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    color: $text-muted;
+    letter-spacing: 0.5px;
+    font-size: .9rem;
+    margin: 0;
   }
 }
 
@@ -124,6 +146,8 @@ $access-landing-size: 1.5rem;
 
 section {
   padding: 5rem 0;
+  position: relative;
+  z-index: 2;
   
   &:nth-child(odd) {
     background: #f2f3f8;
