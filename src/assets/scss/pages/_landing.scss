@@ -1,3 +1,87 @@
+$access-landing-padding: 1rem;
+$access-landing-size: 1.5rem;
+
+.fast-access {
+  .card {
+    width: 100%;
+    max-width: 180px;
+    margin: .75rem;
+    padding: $access-landing-padding;
+    border-radius: $border-radius;
+    text-align: center;
+    border: 3px solid transparent;
+    text-decoration: none;
+    color: $dark;
+    transition: all .75s ease;
+
+    &:hover {
+      border: 3px solid $primary;
+
+      i {
+        animation: topBottom 0.3s forwards;
+      }
+    }
+  }
+  
+  .icon-access {
+    margin-bottom: .75rem;
+    display: inline-block;
+    border-radius: 50%;
+    padding: $access-landing-size;
+    background: rgba($primary, .1);
+  }
+
+  i {
+    font-size: $access-landing-size;
+    width: $access-landing-size;
+    height: $access-landing-size;
+    color: $dark;
+  }
+}
+
+// Quotes
+.quotes {
+  position: relative;
+  font-size: $font-size-lg;
+  margin: 2rem auto 1rem;
+  text-align: center;
+  font-family: monospace;
+  
+  &:before,
+  &:after {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 5rem;
+    color: rgba($secondary, .1);
+  }
+  
+  &:before {
+    content: '\f10d';
+    left: 0;
+    top: -50px;
+  }
+  
+  &:after {
+    content: '\f10e';
+    right: 0;
+    bottom: -30px;
+  }
+
+  cite {
+    margin-top: 1rem;
+    font-size: $font-size-base;
+    display: block;
+    text-align: center;
+
+    &:before {
+      content: '-';
+      margin-right: 6px;
+    }
+  }
+}
+
+// Contact
 .contact-info {
   max-width: 450px;
   margin: 0 auto;
@@ -46,43 +130,16 @@ section {
   }
 }
 
-.quotes {
-  position: relative;
-  font-size: $font-size-lg;
-  margin: 2rem auto 1rem;
-  text-align: center;
-  font-family: monospace;
-  
-  &:before,
-  &:after {
-    position: absolute;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 5rem;
-    color: rgba($secondary, .1);
-  }
-  
-  &:before {
-    content: '\f10d';
-    left: 0;
-    top: -50px;
-  }
-  
-  &:after {
-    content: '\f10e';
-    right: 0;
-    bottom: -30px;
-  }
-
-  cite {
-    margin-top: 1rem;
-    font-size: $font-size-base;
-    display: block;
-    text-align: center;
-
-    &:before {
-      content: '-';
-      margin-right: 6px;
-    }
-  }
+// Animation
+@keyframes topBottom {
+	49% {
+		transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
 }

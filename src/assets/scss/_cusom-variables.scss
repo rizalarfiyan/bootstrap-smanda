@@ -1,3 +1,6 @@
+// Color
+$primary-opacity-1: rgba($primary, .1);
+
 // Transition
 $transition: all .3s ease;
 
@@ -12,7 +15,15 @@ $icon-md: 2rem;
 $icon-lg: 3rem;
 $icon-spacing: 0.25em;
 
+// Border
+$border-hr: 1px solid $primary-opacity-1;
+
 // Cards
 $blog-size-title: 1.25rem;
 $blog-size-desc: 15px;
 $blog-size-meta: 14px;
+$blog-img-height: 260px;
+$blog-img-bg: $gray-300;
+$blog-category-size: .75rem;
+$blog-category-position: 10px;
+$blog-category-padding: .5rem 1rem;
