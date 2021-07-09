@@ -25,9 +25,6 @@
     "gulp-terser": "^2.0.1",
     "postcss": "^8.2.13"
   },
-  "browserslist": [
-    "last 2 major versions"
-  ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0-1",
     "bootstrap": "^4.6.0",

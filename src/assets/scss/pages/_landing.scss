@@ -1,22 +1,22 @@
 @import '../components/parallax-landing';
 
 .section-two {
-  padding: 1.5rem 0;
+  // padding: 1.5rem 0;
 
   > .row {
     &:not(:last-child()) {
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
     }
 
     > * {
-      padding: 1.5rem 0;
+      padding: 1rem 2rem;
     }
   }
 
-  .image-landing {
-    max-width: 320px;
-    margin: auto;
-  }
+  // .image-landing {
+  //   max-width: 320px;
+  //   margin: auto;
+  // }
 }
 
 $access-landing-padding: 1rem;
@@ -77,6 +77,90 @@ $access-landing-size: 1.5rem;
     letter-spacing: 0.5px;
     font-size: .9rem;
     margin: 0;
+  }
+}
+
+// Ekstra
+.ekstra {
+  max-width: 420px;
+  margin: 4rem auto 1rem;
+
+  .extra-image {
+    background: $white;
+    border-radius: $border-radius;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    max-width: 120px;
+    max-height: 140px;
+    margin: 8px;
+    text-align: center;
+    text-decoration: none;
+
+    &:nth-child(3n+1) {
+      margin-top: -60px;
+    }
+
+    &:nth-child(3n) {
+      margin-top: -30px;
+    }
+  }
+
+  .title {
+    margin-bottom: 12px;
+  }
+}
+
+// Koperasi
+.koperasi {
+  margin: 30px auto;
+
+  .data-money {
+    background: $white;
+  }
+
+  .my-data {
+    padding: 20px 20px 0;
+
+    ul {
+      margin: 10px 0;
+    }
+
+    span {
+      background: $white;
+    }
+
+    li {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='16' viewBox='0 0 4 2'%3E %3Ccircle fill='currentColor' cx='1' cy='1' r='1' /%3E %3C/svg%3E") repeat-x top;
+      margin: 6px 0;
+    }
+  }
+
+  .data-money {
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+
+    .top {
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      padding: 26px 0;
+      background: $primary;
+    }
+
+    .my-money {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $white;
+    }
+
+    .checkout {
+      padding: 5px 20px 20px;
+    }
   }
 }
 
@@ -178,6 +262,23 @@ section {
 
   &.bg-gray {
     background: #f2f3f8;
+  }
+}
+
+// Responsive
+@media (max-width: 440px) {
+  .ekstra {
+    max-width: 400px;
+
+    .extra-image {
+      &:nth-child(even) {
+        margin-top: -70px;
+      }
+  
+      &:nth-child(odd) {
+        margin-top: 10px;
+      }
+    }
   }
 }
 

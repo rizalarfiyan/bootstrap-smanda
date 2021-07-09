@@ -1,5 +1,11 @@
-// Color
-$primary-opacity-1: rgba($primary, .1);
+// Images
+$dimensions: 16 24 32 48 64 96 128;
+$aspect-ratios: (
+  (16 9),
+  (4 3),
+  (1 1),
+);
+$color-placeholder: $gray-200;
 
 // Transition
 $transition: all .3s ease;
@@ -12,7 +18,7 @@ $icon-lg: 3rem;
 $icon-spacing: 0.25em;
 
 // Border
-$border-hr: 1px solid $primary-opacity-1;
+$border-hr: 1px solid $border-color;
 
 // Cards
 $blog-size-title: 1.25rem;
