@@ -1,8 +1,6 @@
 @import '../components/parallax-landing';
 
 .section-two {
-  // padding: 1.5rem 0;
-
   > .row {
     &:not(:last-child()) {
       padding-bottom: 2rem;
@@ -12,11 +10,40 @@
       padding: 1rem 2rem;
     }
   }
+}
 
-  // .image-landing {
-  //   max-width: 320px;
-  //   margin: auto;
-  // }
+// Kepsek 
+.image-landing {
+  position: relative;
+
+  .images-top-landing {
+    max-width: 320px;
+    margin: auto;
+
+    &:not(.oval) {
+      border-radius: .5rem;
+    }
+  }
+
+  .jabatan, .status-sek {
+    background: $white;
+    border-radius: $border-radius;
+    bottom: 1rem;
+    font-size: $font-size-base;
+    position: absolute;
+    padding: .75rem 1.5rem;
+    right: 4rem;
+    text-align: center;
+  }
+
+  .status-sek {
+    left: 50px;
+    right: auto;
+  }
+
+  li {
+    margin: 4px 0;
+  }
 }
 
 $access-landing-padding: 1rem;
