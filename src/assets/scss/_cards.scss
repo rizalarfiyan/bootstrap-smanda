@@ -1,7 +1,7 @@
 // Blog Cards
 .wrap-blog {
-	> .blog-item:not(:last-child) {
-		margin: auto auto 1rem auto;
+	> .blog-item:last-child {
+		margin: auto;
 	}
 }
 
@@ -13,6 +13,7 @@
 	border: 1px solid rgba($dark, 0.10);
 	width: 100%;
 	max-width: 350px;
+	margin: auto auto 1rem auto;
   @extend %transition;
 	
 	&.sidebar-post {

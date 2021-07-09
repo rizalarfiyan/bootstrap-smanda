@@ -1,0 +1,94 @@
+// Reactions
+.reactions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+
+  &.has-react .react:not(.active) .img-react {
+    opacity: .5;
+    filter: grayscale(100%);
+  }
+
+  .react {
+    margin: 10px;
+    text-align: center;
+
+    &.like .img-react {
+      background-position: 0 0;
+    }
+    &.love .img-react {
+      background-position: -52px 0;
+    }
+    &.thankful .img-react {
+      background-position: -314px 0;
+    }
+    &.haha .img-react {
+      background-position: -104px 0;
+    }
+    &.wow .img-react {
+      background-position: -156px 0;
+    }
+    &.sad .img-react {
+      background-position: -208px 0;
+    }
+    &.angry .img-react {
+      background-position: -260px 0;
+    }
+  }
+
+  .action-react {
+    overflow: hidden;
+    border-radius: $rounded-pill;
+    padding: 8px;
+    border: 2px solid transparent;
+    transition: all .4s ease;
+    background: $white;
+    cursor: pointer;
+    
+    &:hover {
+      border: 2px solid $primary;
+      background: rgba($dark, .2);
+    }
+
+    .img-react {
+      display: block;
+      height: 48px;
+      width: 48px;
+      background-image: url('https://assets.medinnna.com/facebook-reactions.gif');
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+  }
+}
+
+// Share Button
+.share-button {
+  .btn {
+    margin: 4px 2px;
+  }
+}
+
+// Prev and Next
+.prev-next {
+  > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap!important;
+    color: $dark;
+    max-width: 320px;
+    border-radius: $border-radius-lg;
+    padding: 10px;
+  }
+
+  .icon {
+    color: $dark;
+  }
+
+  .text-muted {
+    .icon {
+      color: $text-muted;
+    }
+  }
+}
