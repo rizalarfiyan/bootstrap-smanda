@@ -1,0 +1,11 @@
+.btn {
+  transition: $transition !important;
+
+  &.default {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem .5rem .5rem 1rem;
+  }
+}

@@ -29,6 +29,12 @@
 	@extend %transition;
 
 	&:hover {
-		top:-10px;
+		top: -10px;
+	}
+
+	@include hover-focus {
+		&.btn {
+			top: -6px;
+		}
 	}
 }

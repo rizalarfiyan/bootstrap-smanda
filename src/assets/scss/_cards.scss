@@ -5,12 +5,19 @@
 	overflow: hidden;
 	position: relative;
 	border: 1px solid rgba($dark, 0.10);
+	width: 100%;
+	max-width: 350px;
+	margin: auto;
   @extend %transition;
 
 	&:hover {
 		.blog-img {
 			img {
 				transform: scale(1.15);
+			}
+
+			.blog-data {
+				right: 1rem;
 			}
 		}
 	}
@@ -37,6 +44,34 @@
     letter-spacing: .5px;
 		text-transform: uppercase;
 	}
+
+	.blog-data {
+		color: $dark;
+		position: absolute;
+		right: -4rem;
+		bottom: 10px;
+		text-align: center;
+		font-size: 14px;
+		@extend %transition;
+
+		.icon {
+			color: $primary;
+			font-size: 1.25rem;
+			width: 1.25rem;
+			height: 1.25rem;
+			margin: auto;
+		}
+
+		> div {
+			padding: .3rem .6rem;
+			border-radius: 4px;
+			background: $white;
+
+			&:not(:last-child) {
+				margin-bottom: 6px;
+			}
+		}
+	}
 	
 	.blog-info {
 		padding: 20px;
@@ -62,14 +97,12 @@
 		}
 
 		.blog-desc {
-
 			@include truncate(84px, 3);
 
 			p {
 				font-size: $blog-size-desc;
 				margin: 0;
 			}
-
 		}
 
 		.blog-meta {
