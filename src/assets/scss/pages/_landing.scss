@@ -166,14 +166,17 @@ $access-landing-size: 1.5rem;
 section {
   padding: 5rem 0;
   position: relative;
-  z-index: 2;
   background: white;
+  
+  &.landing {
+    z-index: 2;
+  }
 
-  &:nth-of-type(2) {
+  &.second-landing {
     border-top: 7px solid $primary;
   }
-  
-  &:nth-child(odd) {
+
+  &.bg-gray {
     background: #f2f3f8;
   }
 }

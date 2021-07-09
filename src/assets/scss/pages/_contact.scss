@@ -1,0 +1,20 @@
+$padding-contact-page: 1.25rem;
+
+.content-contact {
+  > * {
+    padding-bottom: $padding-contact-page;
+  }
+
+  .contact-map {
+    width: 100%;
+    height: 400px;
+    background: $white;
+    padding: $padding-contact-page;
+    border: 1px solid $card-border-color;
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }  
+}
