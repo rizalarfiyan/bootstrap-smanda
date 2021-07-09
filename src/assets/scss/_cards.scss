@@ -7,7 +7,7 @@
 	border: 1px solid rgba($dark, 0.10);
 	width: 100%;
 	max-width: 350px;
-	margin: auto;
+	margin: auto auto 1rem auto;
   @extend %transition;
 
 	&:hover {
