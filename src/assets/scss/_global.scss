@@ -100,3 +100,20 @@ ul {
     padding: 0;
   }
 }
+
+// Container
+.full-container {
+  min-height: 100vh;
+  width: 100%;
+
+  .status-code {
+    font-weight: $font-weight-bold;
+    letter-spacing: 2px;
+    color: $gray-300;
+    font-size: $font-size-base * 8;
+  }
+  
+  .status-titles {
+    margin: -4rem auto 1.5rem;
+  }
+}
